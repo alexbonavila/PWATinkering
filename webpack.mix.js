@@ -39,7 +39,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .copy('node_modules/admin-lte/plugins','public/plugins')
    .copy('node_modules/icheck/skins/square/blue.png','public/css')
    .copy('node_modules/icheck/skins/square/blue@2x.png','public/css')
-   .copy('resources/assets/js/service-worker.js', 'public/js');
+   .copy('resources/assets/js/service-worker.js', 'public');
 
 if (mix.config.inProduction) {
   mix.version();
