@@ -30,4 +30,9 @@ self.addEventListener('fetch',function (event) {
     console.log('fetch Service Worker');
     console.log(event.request.url);
     const url = new URL(event.request.url);
+
+    if (event.request.url === "http://localhost:8080/img/arrow1.png"){
+        console.log("TEST")
+        return
+    }
 })

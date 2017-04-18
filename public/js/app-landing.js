@@ -2615,7 +2615,7 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/service-worker.js').then(function () {
     console.log('service worker');
   }).catch(function (err) {
-    console.log('no service worker' + err);
+    console.log('no service worker: ' + err);
   });
 }
 
