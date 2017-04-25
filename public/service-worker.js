@@ -9,7 +9,7 @@ var offlineFundamentals = [
 
 var offLinePage = '<html><title>Opps we are Offline!!</title><body>Opps we are Offline!!</body></html>'
 
-self.addEventListener('install',function (event) {
+self.addEventListener('install', function (event) {
     console.log('Installing...');
     //OFFLINE -> Install all to require offline app
 
@@ -22,11 +22,11 @@ self.addEventListener('install',function (event) {
     )
 })
 
-self.addEventListener('activate',function (event) {
+self.addEventListener('activate', function (event) {
     console.log('Activating Service Worker');
 })
 
-self.addEventListener('fetch',function (event) {
+self.addEventListener('fetch', function (event) {
     console.log('fetch Service Worker');
     console.log(event.request.url);
     const url = new URL(event.request.url);
